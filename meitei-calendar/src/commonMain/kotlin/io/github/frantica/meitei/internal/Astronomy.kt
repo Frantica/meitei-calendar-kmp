@@ -11,8 +11,8 @@ import kotlin.math.sin
  * Low-level astronomy used by the calendar, after Jean Meeus, *Astronomical Algorithms* (2nd ed.).
  *
  * All instants are Julian Days in Universal Time (UT) unless a name says `jde` (Terrestrial Time).
- * Accuracy is well within a minute for new moons and ~0.02° for lunar longitude between
- * 1900 and 2100, which is far finer than the 12° width of a tithi.
+ * New moons are tested to within 3 minutes of published times. Lunar longitude is a truncated series,
+ * accurate enough for the 12° width of a tithi except very close to a boundary.
  */
 internal object Astronomy {
     const val J2000: Double = 2451545.0
