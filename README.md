@@ -10,11 +10,11 @@ A **Kotlin Multiplatform** library for the **Meitei (Manipuri) lunar calendar**:
 
 Dates are **computed astronomically** (new moons, the Sun's sidereal sign and sunrise in Imphal), so there are no tables to update each year.
 
-The calendar engine behind [Kumsing](TODO_PLAY_LINK), a Manipuri calendar app with 15K+ users on Google Play and the App Store.
+The calendar engine behind **Kumsing**, a Manipuri calendar app with 15K+ users on [Google Play](https://play.google.com/store/apps/details?id=com.kanglalabs.kumsing) and the [App Store](https://apps.apple.com/in/app/kumsing-manipuri-calendar-2026/id6804580494).
 
 **[▶ Try the web demo](https://frantica.github.io/meitei-calendar-kmp/)**
 
-<!-- TODO: add demo GIF: docs/demo.gif -->
+<p align="center"><img src="docs/demo.gif" width="380" alt="Meitei calendar demo: month view with lunar days and festivals" /></p>
 
 ## Install
 
