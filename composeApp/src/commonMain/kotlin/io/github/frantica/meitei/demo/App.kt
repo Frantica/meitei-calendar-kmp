@@ -107,7 +107,12 @@ private fun TodayCard(calendar: MeiteiCalendar, today: LocalDate) {
         Text(m.toString(), color = MaterialTheme.colorScheme.onPrimary, fontSize = 34.sp, fontWeight = FontWeight.Bold)
         Text(
             "${today.dayOfWeek.name.lowercase().replaceFirstChar { it.uppercase() }}, $today · ${m.month.indianName} · " +
-                if (m.paksha.name == "WAXING") "waxing moon" else "waning moon",
+                when {
+                    m.isFullMoon -> "full moon"
+                    m.isNewMoon -> "new moon"
+                    m.paksha.name == "WAXING" -> "waxing moon"
+                    else -> "waning moon"
+                },
             color = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.85f),
         )
     }
