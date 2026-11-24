@@ -1,0 +1,13 @@
+.gradle/
+build/
+.kotlin/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+xcuserdata/
+kotlin-js-store/
+.claude/
+CLAUDE.md
+CLAUDE.local.md
